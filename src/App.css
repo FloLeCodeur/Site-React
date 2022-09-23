@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', Arial; */
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: bold; */;
+}
+
+/* html, body {
+  font-size: 10px;
+} */
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+.App {
+  text-align: center;
+}
+

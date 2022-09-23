@@ -1,0 +1,145 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.remove-banner {
+  position: absolute;
+  top: 0;
+  color: #f2f2f2;
+  cursor: pointer;
+  line-height: 1.6em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: linear-gradient(to bottom , rgb(246, 246, 246), rgb(251, 251, 251));
+  height: 50px;
+  width: 100%;
+}
+
+.nav-items-container {
+  height: 100%;
+  line-height: 50px;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-items-container  a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px ;
+  font-weight: 500;
+}
+
+.site-name > a {
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.right-items-nav {
+  display: flex;
+}
+
+.login-inscription a {
+  background: #333;
+  border-radius: .6em;
+  margin-left: 10px;
+  padding: .5em;
+  font-size: .9em;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+
+.btn-nav-toggle {
+  display: none;
+}
+
+.btn-menu {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  height: 2px;
+  width: 75%;
+  background: #333;
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease , opacity 0.1s ease;
+}
+.top-line {
+  transform: translateY(-7px);
+}
+.bottom-line {
+  transform: translateY(7px);
+  opacity: 1;
+}
+
+.top-line.active {
+  transform: translateY(0) rotateZ(135deg);
+
+}
+.center-line.active {
+  opacity: 0;
+}
+.bottom-line.active {
+  transform: translateY(0) rotateZ(-135deg);
+}
+  
+  @media screen and (max-width: 500px) {
+    
+    nav {
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .site-name {
+    position: absolute;
+    background: linear-gradient(to bottom , rgb(246, 246, 246), rgb(251, 251, 251));
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-nav-toggle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+  }
+
+  .nav-items-container {
+    transform: translateY(-150px);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: linear-gradient(to bottom , rgb(246, 246, 246), rgb(251, 251, 251));
+    height: auto;
+    width: 100vw;
+    top: 50px;
+  }
+
+  .nav-items-container.active {
+    transform: translateY(0);
+  }
+}

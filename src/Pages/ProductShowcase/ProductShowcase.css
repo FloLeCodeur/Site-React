@@ -1,0 +1,55 @@
+main {
+  padding: 5em 2em;
+}
+
+.product-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoes-show {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.shoes-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.description {
+  text-align: center;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.size span {
+  line-height: 46px;
+  text-decoration: underline;
+}
+
+.sizes {
+  list-style: none;
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+}
+
+.sizes li {
+  padding: .5em;
+  margin-right: -1px;
+  margin-top: -1px;
+  border: 1px solid #111;
+  cursor: pointer;
+}
+
