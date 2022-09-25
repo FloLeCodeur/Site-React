@@ -41,12 +41,6 @@ export default function ProductShowcase() {
   const ok = si()
 
   console.log(ok);
-  
-  
-  console.log(shoesClicked.hasOwnProperty('size'));
-    
-  console.log(brandClicked);
-  console.log(productClicked);
 
   return (
     <main>
