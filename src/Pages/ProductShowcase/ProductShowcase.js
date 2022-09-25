@@ -38,9 +38,7 @@ export default function ProductShowcase() {
     )
   }
   
-  const ok = si()
-
-  console.log(ok);
+  const size = si()
 
   return (
     <main>
@@ -55,7 +53,7 @@ export default function ProductShowcase() {
             <div className="size">
               <span>Tailles :</span>
               { <ul className='sizes'>
-                {ok}
+                {size}
               </ul> }
             </div>
             <p className='description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia reprehenderit esse hic molestiae ipsum excepturi repellendus voluptatum quo? Rem, quas nihil ex praesentium corporis iste repellat ut cum omnis veritatis?</p>

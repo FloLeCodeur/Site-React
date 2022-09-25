@@ -21,7 +21,7 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to top left, rgb(218, 220, 219), rgb(201, 201, 201));
+  background: linear-gradient(to top left, rgb(218, 220, 219), rgb(242, 242, 242));
   height: auto;
   min-width: 300px;
   width: 50%;
@@ -47,7 +47,7 @@ form input {
   padding: .2em;
   border-radius: .4em;
   border: none;
-  box-shadow: 0 0 1px 1px black inset;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.217);
 }
 
 form input::placeholder {
@@ -72,7 +72,7 @@ textarea {
   padding: 0.4em;
   border-radius: .5em;
   border: none;
-  box-shadow: 0 0 1px 1px black inset;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.217);
 } 
 
 @media screen and (max-width: 700px) {

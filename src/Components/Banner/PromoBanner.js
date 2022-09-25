@@ -9,7 +9,6 @@ export default function PromoBanner() {
 
   useEffect(() => {
     
-    
     const intervalBanner = setInterval(() => {
       setTimer(timer => timer +1)
       
@@ -21,6 +20,10 @@ export default function PromoBanner() {
 
   },[])
 
+  const width = window.innerWidth
+
+  console.log(width);
+
   if (timer > 3) {
     setTimer(timer => timer = 1)
   }
@@ -31,7 +34,7 @@ export default function PromoBanner() {
         Payer en plusieurs fois
       </span>
       <span className={timer === 2 ? 'active' : ''}>
-        10€ Offert sur ta première commande avec le code FIRST10
+        {width > 600 ? '10€ Offert sur ta première commande avec le code FIRST10' : '10€ Offert FIRST10'}
       </span>
       <span className={timer === 3 ? 'active' : ''}>
         Livraison ultra-rapide
