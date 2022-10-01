@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
 
 *, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', Arial; */
-  font-family: 'Roboto', sans-serif;
-  /* font-weight: bold; */;
 }
 
 /* html, body {
@@ -22,3 +18,20 @@ body {
   text-align: center;
 }
 
+a {
+  color: #222;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #222; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ebe6d4; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #222; /* creates padding around scroll thumb */
+}

@@ -20,9 +20,19 @@ export default function PromoBanner() {
 
   },[])
 
-  const width = window.innerWidth
+  const [checkedWidth, setcheckedWidth] = useState(window.innerHeight)
 
-  console.log(width);
+  const widthFunc = () => {
+    setcheckedWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', widthFunc)
+
+    return () => {
+      window.removeEventListener('resize', widthFunc)
+    }
+  })
 
   if (timer > 3) {
     setTimer(timer => timer = 1)
@@ -30,11 +40,11 @@ export default function PromoBanner() {
 
   return (
     <div className= 'promo-banner'>
-      <span className={timer === 1 ? 'active' : ''}>
+       <span className={timer === 1 ? 'active' : ''}>
         Payer en plusieurs fois
       </span>
       <span className={timer === 2 ? 'active' : ''}>
-        {width > 600 ? '10€ Offert sur ta première commande avec le code FIRST10' : '10€ Offert FIRST10'}
+        {checkedWidth > 600 ? '10€ Offert sur ta première commande avec le code FIRST10' : '10€ Offert FIRST10'}
       </span>
       <span className={timer === 3 ? 'active' : ''}>
         Livraison ultra-rapide

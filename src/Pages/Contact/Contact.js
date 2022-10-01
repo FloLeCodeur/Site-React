@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className='contact-container'>
       <img src={ContactSnkrs} alt='Fond du formulaire de contact avec chaussure verte'/>
-      <form action='' method='POST'>
+      <form action='' method='POST' className='form-contact'>
         <div className="title">
           <h1>Contactez-nous !</h1>
           <h3>Pose nous la moindre petite question qui te tracasse.</h3>

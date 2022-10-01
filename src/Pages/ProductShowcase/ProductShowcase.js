@@ -41,7 +41,7 @@ export default function ProductShowcase() {
   const size = si()
 
   return (
-    <main>
+    <main className='product-showcase-wrapper'>
       <div className="product-showcase">
         <h1>{shoesClicked.title}</h1>
         <div className="shoes-show">

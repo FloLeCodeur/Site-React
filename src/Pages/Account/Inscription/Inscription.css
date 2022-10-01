@@ -1,0 +1,8 @@
+.form-inputs-inscription {
+  display: flex;
+  justify-content: center;
+}
+
+.form-items.submit {
+  margin: 0;
+}

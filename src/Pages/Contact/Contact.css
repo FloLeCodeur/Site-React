@@ -16,7 +16,7 @@
   transform: translate(-50%, -50%);
 }
 
-form {
+.form-contact {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,7 +40,7 @@ form {
   text-align: center;
 }
 
-form input {
+.form-contact input {
   min-width: 80%;
   margin-bottom: 1em;
   text-align: center;
@@ -50,18 +50,19 @@ form input {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.217);
 }
 
-form input::placeholder {
+.form-contact input::placeholder {
   color: #333;
   text-transform: uppercase;
 }
 
-form button {
+.form-contact button {
   padding: .5em 1em;
   border-radius: 1em;
   border: none;
   background: linear-gradient(to top, #222, #111);
   color: #f2f2f2;
-  font-weight: bolder;
+  font-weight: 500;
+  letter-spacing: .1em;
   text-transform: uppercase;
   margin-top: 1.5em;
 }
@@ -80,7 +81,7 @@ textarea {
     display: none;
   }
 
-  form {
+  .form-contact {
     padding: 1em;
   }
 

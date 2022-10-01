@@ -36,11 +36,10 @@ export default function NavBar() {
           <Link to='/contact'>Contact</Link>
         </div>
         <div className="right-items-nav">
-          <Link to='/panier'>Panier</Link>
-          <div className="login-inscription">
-            <Link to='/inscription'>Inscription</Link>
-            <Link to='/connexion'>Connexion</Link>
-          </div>
+          <Link to='/cart'><span class="material-symbols-outlined">shopping_cart</span></Link>
+          <Link to='/register' className="login-inscription">
+          <span class="material-symbols-outlined">person</span>
+          </Link>
         </div>
         <div className="btn-nav-toggle">
           <div onClick={handleMenuToggle} className="btn-menu">
