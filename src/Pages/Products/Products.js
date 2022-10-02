@@ -6,25 +6,25 @@ import { Link } from 'react-router-dom'
 
 export default function Products() {
 
-  const pl = inventory.map((item) => {
+  const productsItem = inventory.map((el) => {
 
-    const br = item.brand
+    const itemBrand = el.brand
 
-    const it = item.shoes.map((el) => {
+    const itemProduct = el.shoes.map((item) => {
       return (
-        <Link to={{pathname : `/products/${br.replace(/\s+/g, "")}/${el.title.replace(/\s+/g, "-").trim()}`}} 
-            key={el.id}
+        <Link to={{pathname : `/products/${itemBrand.replace(/\s+/g, "")}/${item.title.replace(/\s+/g, "-").trim()}`}} 
+            key={item.id}
         >
           <div className="card">
                 <div className="products-visual">
-                  <img src={process.env.PUBLIC_URL + `ProductsImages/${el.img}.webp`} alt="" />
+                  <img src={process.env.PUBLIC_URL + `ProductsImages/${item.img}.webp`} alt="" />
                 </div>
                 <div className="product-title">
-                  <span>{el.title}</span>
+                  <span>{item.title}</span>
                 </div>
                 <div className="product-description">
                   <div className="price">
-                    A partir de : {el.price}€
+                    A partir de : {item.price}€
                   </div>
                 </div>
               </div>
@@ -33,10 +33,10 @@ export default function Products() {
     })
     
     return (
-      <section key={item.key} className='products'>
-        <h1>{br}</h1>
+      <section key={el.key} className='products'>
+        <h1>{itemBrand}</h1>
         <div className="products-container">
-          {it}
+          {itemProduct}
         </div>
       </section>
     )
@@ -45,7 +45,7 @@ export default function Products() {
 
   return (
    <main className='wrapper'>
-    {pl}
+    {productsItem}
    </main>
   );
 }

@@ -36,9 +36,9 @@ export default function NavBar() {
           <Link to='/contact'>Contact</Link>
         </div>
         <div className="right-items-nav">
-          <Link to='/cart'><span class="material-symbols-outlined">shopping_cart</span></Link>
+          <Link to='/cart'><span className="material-symbols-outlined">shopping_cart</span></Link>
           <Link to='/register' className="login-inscription">
-          <span class="material-symbols-outlined">person</span>
+          <span className="material-symbols-outlined">person</span>
           </Link>
         </div>
         <div className="btn-nav-toggle">
