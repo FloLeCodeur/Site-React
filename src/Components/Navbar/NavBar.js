@@ -20,6 +20,8 @@ export default function NavBar() {
     setRemove(!remove)
   }
 
+  console.log('oui');
+
   return (
     <header>
       {remove && <PromoBanner/>}

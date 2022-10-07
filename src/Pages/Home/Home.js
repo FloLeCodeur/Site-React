@@ -2,46 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import SnkrsImg from './SnkrsImg.jpg'
-import BCJ4 from './220901_ChroniclesHeader_Air-Jordan-4-Retro-SE-_BLACK-CANVAS“.jpg'
+import TrendGallery from './Carousel/TrendGallery'
 
-import inventory from '../../data/inventory'
 
 export default function Home() {
-
-  const trendItems = inventory.map((el) => {
-
-    const itemBrand = el.brand
-
-    const items = el.shoes.map((item) => {
-      return (
-        <Link to={{pathname : `/products/${itemBrand.replace(/\s+/g, "")}/${item.title.replace(/\s+/g, "-").trim()}`}} 
-            key={item.id}
-        >
-          <div className="card-home">
-                <div className="products-visual">
-                  <img src={process.env.PUBLIC_URL + `ProductsImages/${item.img}.webp`} alt="" />
-                </div>
-                <div className="product-title">
-                  <span>{item.title}</span>
-                </div>
-                <div className="product-description">
-                  <div className="price">
-                    A partir de : {item.price}€
-                  </div>
-                </div>
-              </div>
-        </Link>
-      )
-    })
-
-    return (
-      <div key={el.key}>
-        {items}
-      </div>
-
-    )
-  })
-
   return (
     <>
       <div className='home-hero'>
@@ -52,19 +16,15 @@ export default function Home() {
         <section className="news-container">
           <h2 className="news-title">Nouveautées</h2>
           <div className="news-img-container">
-            <span><Link to='/products/Jordan4/Jordan-4-black-Canvas'>Air Jordan 4 Black Canvas</Link></span>
+            <span><Link to='/products/Jordan1/Jordan-1-Low-OG-Bleached-Choral'>Air Jordan 1 Low Og Choral</Link></span>
             <div className="news-img">
-              <img src={BCJ4} alt="Nouveautées air jordan 4 black canvas" />
+              <img src={process.env.PUBLIC_URL + `ProductsImages/Home/air-jordan-1-low-og-bleached-coral-cz0790-061-1.webp`} alt="Nouveautées air jordan 4 black canvas" />
             </div>
           </div>
         </section>
         <section className="trend">
           <h2 className="trend-title">Tendances</h2>
-          <div className="trend-caroussel-container">
-            <div className="trend-caroussel">
-              {trendItems}
-            </div>
-          </div>
+            <TrendGallery/>
         </section>
         <section>
           <div className="product-showcase-home">
