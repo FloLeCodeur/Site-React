@@ -6,7 +6,7 @@ export default function News() {
     <main className="main-news">
         <h1>Nouveautées</h1>
       <div className='news-container'>
-        <div>
+        <div className='news-wrapper'>
           <div className='img-container'>
             <img src={process.env.PUBLIC_URL + `ProductsImages/News/donald-martinez-EGWyfNEz6Ho-unsplash.jpg`} alt="" />
           </div>
@@ -19,7 +19,7 @@ export default function News() {
             </div>
           </div>
         </div>
-        <div>
+        <div className='news-wrapper'>
           <div className='img-container'>
             <img src={process.env.PUBLIC_URL + `ProductsImages/News/junior-samson-BjhKc5QBzlg-unsplash.jpg`} alt="" />
           </div>
@@ -32,7 +32,7 @@ export default function News() {
             </div>
           </div>
         </div>
-        <div>
+        <div className='news-wrapper'>
           <div className='img-container'>
             <img src={process.env.PUBLIC_URL + `ProductsImages/News/sacai-nike-vaporwaffle-black-white-cv1363-001-pic6.jpg`} alt="" />
           </div>

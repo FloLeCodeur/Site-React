@@ -23,7 +23,7 @@
   flex-direction: row-reverse;
 }
 
-.img-container {
+.news-wrapper > .img-container {
   background: lightblue;
   flex: 1;
 }
@@ -47,6 +47,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.description-wrapper > h2 {
+  margin-bottom: .5em;
 }
 
 .btn-disconnect {

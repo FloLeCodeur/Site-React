@@ -28,15 +28,15 @@ export default function Home() {
             <TrendGallery/>
         </section>
         <section>
-          <div className="product-showcase-home">
-            <div className="container-grid">
-              <div className="img-container">
+          <div className="showcase-home">
+            <div className="home-showcase-wrapper">
+              <div className="home-showcase-img-container">
                 <Link to='products/NewBalance/New-Balance-550-Au-Lait'>
-                  <img src={process.env.PUBLIC_URL + `ProductsImages/Home/05_220506_NewBalance550_ChroniclesBanner.jpg`} alt="New balance 550 marron clair et beige" />
+                  <img src={process.env.PUBLIC_URL + `ProductsImages/Home/05_220506_NewBalance550_ChroniclesBanner.jpg`} alt="" />
                 </Link>
               </div>
-              <div className="product-showcase-home-description">
-                <div className="text-center">
+              <div className="showcase-home-description">
+                <div className="showcase-home-description-wrapper">
                   <Link to='products/NewBalance/New-Balance-550-Au-Lait'>
                     <h2 className='title-product-home-showcase'>New Balance 550 Au Lait</h2>
                   </Link>
@@ -48,11 +48,30 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="home-showcase-wrapper">
+              <div className="home-showcase-img-container">
+              <Link to='products/Nike/Nike-Dunk-Low-Archeo-Pink'>
+                  <img src={process.env.PUBLIC_URL + `ProductsImages/Home/IG_1051645-Dunk-Low-white-archaeo-pink-2.jpg`} alt="New balance 550 marron clair et beige" />
+                </Link>
+              </div>
+              <div className="showcase-home-description">
+                <div className="showcase-home-description-wrapper">
+                <Link to='products/Nike/Nike-Dunk-Low-Archeo-Pink'>
+                    <h2 className='title-product-home-showcase'>Nike Dunk Low Archeo Pink</h2>
+                  </Link>
+                  <span>Une silouhette iconique, un rose doux. Une petite douceur pour rester en été</span>
+                  <span>Prêts à illuminer durant cette saison.</span>
+                  <Link className="btn" to='products/Nike/Nike-Dunk-Low-Archeo-Pink'>
+                    <span>Découvrir</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div className="product-showcase-home two">
-            <div className="container-grid two">
+            <div className="container-wrapper two">
               <div className="img-container two">
                 <Link to='products/Nike/Nike-Dunk-Low-Archeo-Pink'>
                   <img src={process.env.PUBLIC_URL + `ProductsImages/Home/IG_1051645-Dunk-Low-white-archaeo-pink-2.jpg`} alt="New balance 550 marron clair et beige" />
@@ -72,7 +91,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section>
           <HomeGallery/>
         </section>
