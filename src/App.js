@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 
 import Home from './Pages/Home/Home';
 import Products from './Pages/Products/Products';
+import News from './Pages/News/News';
 import ProductShowcase from './Pages/ProductShowcase/ProductShowcase';
 import Contact from './Pages/Contact/Contact';
 
@@ -23,6 +24,7 @@ function App() {
 
         <Route  path='/' element={<Home />} />
         <Route  path='/products' element={<Products />} />
+        <Route path='/Nouveaute' element={<News/>}/>
         <Route  path='/products/:brand/:id' element={<ProductShowcase />} />
         <Route  path='/contact' element={<Contact />} />
 

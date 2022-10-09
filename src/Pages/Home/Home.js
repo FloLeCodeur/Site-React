@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import SnkrsImg from './SnkrsImg.jpg'
-import TrendGallery from './Carousel/TrendGallery'
+import TrendGallery from './TrendGallery/TrendHomeGallery'
+import HomeGallery from './HomeGallery/HomeGallery'
 
 
 export default function Home() {
@@ -71,7 +72,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>      
+        </section>
+        <section>
+          <HomeGallery/>
+        </section>
       </div>
     </>
   )

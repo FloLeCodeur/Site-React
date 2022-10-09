@@ -1,0 +1,29 @@
+.main-news {
+  height: 5000px;
+  padding: 100px 0;
+  background: purple;
+}
+
+.main-news > div {
+  background: pink;
+  display: flex;
+  height: 800px;
+  width: 100%;
+}
+
+.o {
+  background: lightblue;
+  flex: 1;
+}
+
+.k {
+  background: lightcoral;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .main-news > div {
+    flex-direction: column;
+    height: 1000px;
+  }
+}

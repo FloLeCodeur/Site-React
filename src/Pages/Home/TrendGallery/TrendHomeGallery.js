@@ -1,5 +1,5 @@
 import React from 'react'
-import './TrendGallery.css'
+import './TrendHomeGallery.css'
 
 
 import inventory from '../../../data/inventory';
