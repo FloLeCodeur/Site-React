@@ -1,0 +1,25 @@
+.not-found-main {
+  height: 100vh;
+}
+
+.not-found-container {
+  height: 100%;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-container > h1 {
+  margin-bottom: .5em;
+}
+
+.not-found-container > button {
+  margin-top: 2em;
+  background: none;
+  border: 1px solid #222;
+  border-radius: 1em;
+  padding: .5em 1em;
+}

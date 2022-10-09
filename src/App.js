@@ -14,6 +14,8 @@ import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Account/Login/Login';
 import Inscription from './Pages/Account/Inscription/Inscription';
 
+import NotFound from './Pages/Notfound/NotFound';
+
 
 function App() {
   return (   
@@ -24,16 +26,20 @@ function App() {
 
         <Route  path='/' element={<Home />} />
         <Route  path='/products' element={<Products />} />
-        <Route path='/Nouveaute' element={<News/>}/>
+        <Route  path='/Nouveaute' element={<News/>}/>
         <Route  path='/products/:brand/:id' element={<ProductShowcase />} />
         <Route  path='/contact' element={<Contact />} />
 
         <Route path='/register' element={<Login/>}/>
         <Route path='/inscription' element={<Inscription/>}/>
 
+      
+        <Route path='*' element={<NotFound/>}/>
+
       </Routes>
 
       <Footer />
+
 
     </>
   );
