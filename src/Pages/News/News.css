@@ -1,29 +1,90 @@
 .main-news {
-  height: 5000px;
-  padding: 100px 0;
-  background: purple;
+  padding-top: 100px;
+  background: rgb(246, 243, 243);
+  text-align: center;
 }
 
-.main-news > div {
-  background: pink;
+.main-news > h1 {
+  text-decoration: underline;
+}
+
+.main-news > .news-container {
+  padding: 50px 0;
+}
+
+.main-news > .news-container > div {
   display: flex;
+  flex-direction: row;
   height: 800px;
   width: 100%;
 }
 
-.o {
+.main-news > .news-container div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.img-container {
   background: lightblue;
   flex: 1;
 }
 
-.k {
-  background: lightcoral;
+.descrition-container {
   flex: 1;
 }
 
+.img-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.description-wrapper {
+  padding: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-disconnect {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+  padding: .5em 1em;
+  border: 1px solid rgba(51, 51, 51, 0.50);
+  color: rgba(51, 51, 51, 0.50);
+  border-radius: 1em;
+}
+
+.btn-disconnect::after {
+  content: 'Un peu de patiente...';
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -1.8em;
+  left: .5em;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.btn-disconnect:hover::after {
+  opacity: 1;
+}
+
 @media (max-width: 900px) {
-  .main-news > div {
+  .main-news > .news-container > div {
     flex-direction: column;
     height: 1000px;
+  }
+
+  .main-news > .news-container > div:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .img-container {
+    height: 50%;
   }
 }
